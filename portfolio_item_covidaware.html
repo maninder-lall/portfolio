@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Portfolio Item 1 - COVIDaware</title>
+        <link rel="icon" type="image/jpg" href="img/profilePicture.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+        <script src="https://kit.fontawesome.com/a32f1fdb0d.js" crossorigin="anonymous"></script>
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+        <link rel = "stylesheet" href = "css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class = "logo">
+                <img src = "img/icon.png" alt = "">
+            </div>
+            <button class = "nav-toggle", aria-label = "toggle navigation">
+                <span class = "hamburger"></span>
+            </button>
+            <nav class = "nav">
+                <ul class = "nav__list">
+                    <li class = "nav__item"><a href = "index.html" class = "nav__link">Home</a></li>
+                    <li class = "nav__item"><a href = "index.html#services" class = "nav__link">My Services</a></li>
+                    <li class = "nav__item"><a href = "index.html#about" class = "nav__link">About Me</a></li>
+                    <li class = "nav__item"><a href = "index.html#work" class = "nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Introduction portion of page-->
+        <section class = "intro" id = "home">
+            <h1 class = "section__title section__title--intro">
+                The Covid Case Tracking Website <strong>COVIDaware</strong>
+            </h1>
+            <p class = "section__subtitle section__subtitle--intro">Created: January 13, 2021</p>
+            <img src = "img/COVIDaware_icon.png" alt = "" class = "intro__img">
+        </section>
+        
+        <div class = "portfolio-item-individual">
+            <p>COVIDaware is a project that was created alongside 13 of my peers. This project's goal was to display COVID-19 data through various visualizations. The home page looked like the following.</p>
+            <img src="img/COVIDaware_home.png" alt = "">
+            <p>It served as the foundation blocks for my interest in learning more about web-development. It was the first major project I did with a significant group. Many of us had no prior experience so it served as a great opportunity to learn. The website was designed with a large focus on functionality. This is why the website was mostly grayscale, to appeal to users who need vision assistance.</p>
+            <p>The website also adopted many industry standard UX Techniques such as the navigation bar, the search bar, and even drop-down menu's for items in the navigation bar.</p>
+            <img src="img/COVIDaware_dropdown.png" alt = "">
+            <p>This project also was a lesson on operating with various API's. For the project a google maps api, along with a twitter api was used for various components. This taught me how to adjust to different constraints of various API's. Furthermore the significance of using API's, and how valuable they are in development.</p>
+            <p>The following is one of many visualizations that were created using the google maps API:</p>
+            <img src="img/COVIDaware_heatmap.png" alt = "">
+            <p>This project also served as reinforcing my knowledge on REACT and bootstrap, which were instrumental in the creating of the project. React helped in the creation project by helping build the user interfaces. Furthermore bootstrap was a complete game changed in terms of helping with CSS. This portfolio website was created without any libraries like bootstrap, thus making the CSS much more tedious. This was a self imposed constraint to better learn CSS.</p>
+            <p>For more information regarding the project, and functionality, the user manual created by myself for the purpose of the project can be used to get a deeper understanding of the project.</p>
+            <p><a href="COVIDaware/COVIDaware_User_Manual.pdf">COVIDaware User Manual</a></p>
+            <p>The website pulled data from government official websites, was converted for use in the back-end. The front-end would assign various variables to parameters, and incorporate for use in API's. This was done in inefficient manner, and needs to be re-proccessed.</p>
+            <P>Currently the source in which the data came from has changed, thus breaking the core functionality of the website. Thus it is currently decommissioned, and I am in the proccess of fixing several aspects before redeployment. A new user-interface, more efficient use of data, integrating a mysql database for back-end, and re-integrating the data source for data are all tasks that must be completed before redeployment.</P>
+        </div>
+        
+        
+        
+        <!-- Footer -->
+        <footer class = "footer">
+            <a href = "mailto:lall9370@mylaurier.ca" class = "footer-link">lall9370@mylaurier.ca</a>
+            <ul class = "social-list">
+                <li class = "social-list__item">
+                    <a class = "social-list__link" href = "https://www.linkedin.com/in/maninder-lall-3698a21a4/"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li class = "social-list__item">
+                    <a class = "social-list__link" href = "https://github.com/maninder-lall"><i class="fa-brands fa-github"></i></a></li>
+                <li class = "social-list__item">
+                    <a class = "social-list__link" href = "https://twitter.com/Maninderlall"><i class="fa-brands fa-twitter-square"></i></a></li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>

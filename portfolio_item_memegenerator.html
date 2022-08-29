@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Portfolio Item 3 - Meme Generator</title>
+        <link rel="icon" type="image/jpg" href="img/profilePicture.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+        <script src="https://kit.fontawesome.com/a32f1fdb0d.js" crossorigin="anonymous"></script>
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+        <link rel = "stylesheet" href = "css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class = "logo">
+                <img src = "img/icon.png" alt = "">
+            </div>
+            <button class = "nav-toggle", aria-label = "toggle navigation">
+                <span class = "hamburger"></span>
+            </button>
+            <nav class = "nav">
+                <ul class = "nav__list">
+                    <li class = "nav__item"><a href = "index.html" class = "nav__link">Home</a></li>
+                    <li class = "nav__item"><a href = "index.html#services" class = "nav__link">My Services</a></li>
+                    <li class = "nav__item"><a href = "index.html#about" class = "nav__link">About Me</a></li>
+                    <li class = "nav__item"><a href = "index.html#work" class = "nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Introduction portion of page-->
+        <section class = "intro" id = "home">
+            <h1 class = "section__title section__title--intro">
+                Using the Top 100 Memes <strong>Meme Generator</strong>
+            </h1>
+            <p class = "section__subtitle section__subtitle--intro">Created: January 13, 2021</p>
+            <img src = "img/memegenerator_logo.png" alt = "" class = "intro__img">
+        </section>
+        
+        <div class = "portfolio-item-individual">
+            <p>The meme generator is a fun and whimsical project idea of mine that a popular trend, and makes it easier and more accessible for people to use. The meme generator uses an API from imgflip that returns 100 of the current most popular meme templates.</p>
+            <p>More information about the API can be found here: <a href = "https://imgflip.com/api">https://imgflip.com/api</a></p>
+            <img src="img/memegen_home.png" alt = "">
+            <p>This project was a great learning opportunity as it allowed me to practice useState, and useEffect which are the most fascinating parts of REACT.</p>
+            <p>By pressing the get a new meme image, this application will randomly select from the current 100 best meme images from the API. Then update the image on the screen to the corresponding image.</p>
+            <img src="img/memegen_home2.png" alt = "">
+            <p>The API returned the following image from Pirates of the Caribbean, as a meme template. This was performed around the time of the Johnny Depp v Amber Heard Trial, thus it stands to reason that this image was a by-product of current relavence in the world.</p>
+            <p>Obviously just simply returning an image would not be of much use. Thus the user can type in any text in the two fields above, and the will update live, on the image. An example is shown below:</p>
+            <img src="img/memegen_example.png" alt = "">
+            <p>Through the project I learned, how to update components live, and avoid unnecessarily re-rendering a page when no changes have been made. React useState, and useEffect were instrumental in this project, and I will be incorporating them in all my future applications that can benefit from their use.</p>
+        </div>
+        
+        
+        
+        <!-- Footer -->
+        <footer class = "footer">
+            <a href = "mailto:lall9370@mylaurier.ca" class = "footer-link">lall9370@mylaurier.ca</a>
+            <ul class = "social-list">
+                <li class = "social-list__item">
+                    <a class = "social-list__link" href = "https://www.linkedin.com/in/maninder-lall-3698a21a4/"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li class = "social-list__item">
+                    <a class = "social-list__link" href = "https://github.com/maninder-lall"><i class="fa-brands fa-github"></i></a></li>
+                <li class = "social-list__item">
+                    <a class = "social-list__link" href = "https://twitter.com/Maninderlall"><i class="fa-brands fa-twitter-square"></i></a></li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>

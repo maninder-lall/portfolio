@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Portfolio Item 4 - Pokedex</title>
+        <link rel="icon" type="image/jpg" href="img/profilePicture.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+        <script src="https://kit.fontawesome.com/a32f1fdb0d.js" crossorigin="anonymous"></script>
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+        <link rel = "stylesheet" href = "css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class = "logo">
+                <img src = "img/icon.png" alt = "">
+            </div>
+            <button class = "nav-toggle", aria-label = "toggle navigation">
+                <span class = "hamburger"></span>
+            </button>
+            <nav class = "nav">
+                <ul class = "nav__list">
+                    <li class = "nav__item"><a href = "index.html" class = "nav__link">Home</a></li>
+                    <li class = "nav__item"><a href = "index.html#services" class = "nav__link">My Services</a></li>
+                    <li class = "nav__item"><a href = "index.html#about" class = "nav__link">About Me</a></li>
+                    <li class = "nav__item"><a href = "index.html#work" class = "nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Introduction portion of page-->
+        <section class = "intro" id = "home">
+            <h1 class = "section__title section__title--intro">
+                A Pokemon Tracking <strong>Pokedex</strong>
+            </h1>
+            <p class = "section__subtitle section__subtitle--intro">Created: July 20, 2022</p>
+            <img src = "img/pokedex_logo.png" alt = "" class = "intro__img">
+        </section>
+        
+        <div class = "portfolio-item-individual">
+            <p>The Pokedex is another fun project I took on, that combined one of my passtime pleasures with my desire for development.</p>
+            <p>It uses a dataset that I found on Kaggle in combination with PokeAPI for the Sprites of various Pokemons. More information about both the dataset, and API can be found below.</p>
+            
+            <div class="container">
+                <a href = "https://www.kaggle.com/datasets/dizzypanda/gen-1-pokemon">
+                    <img src = "img/kaggle_icon.png" alt = " " >
+                </a>
+                <a href = "https://pokeapi.co/" class = "portfolio__item">
+                    <img src = "img/pokeapi_icon.png" alt = " " >
+                </a>
+            </div>
+
+            <p></p>
+            <p>The Main Page displays all currently added in Pokemon, with a search nagivation. At the start, the Pokedex will contain all generation 1 Pokemon automatically stored, and all additional Pokemon must be added by the user.</p>
+            <img src="img/pokedex_1.png" alt = "">
+            <p>The search bar is made from scratch making use of React useState, in which a pokemon can be looked up, and update live on the screen.</p>
+            <p>For instance, typing "cha" will return all pokemon who have the substring of "cha" within their name.</p>
+            <img src="img/pokedex_2.png" alt = "">
+            <p>Each one of these cards are creating via REACT components, and mapped using a data object. This allows for the user to click on a individual card, to see more information regarding any pokemon.</p>
+            <p>For the below image, I selected Pokemon #6, Charizard</p>
+            <img src="img/pokedex_individual.png" alt = "">
+            <p>The sprites are obtained automatically from PokeAPI. The data is entered from the user, from the Add Pokemon Menu. For Charizard specifically, it is generation 1, which means it was included in the starter dataset.</p>
+            <p>The following is the Add Pokemon Menu Available in the top right of the navigation bar.</p>
+            <img src="img/pokedex_add.png" alt = "">
+            <p>I will use it to add Pokemon #250, Ho-Oh.</p>
+            <img src="img/pokedex_add_hooh.png" alt = "">
+            <p>This will now insert the Pokemon into the correct position in the pokedex, ordered by number.</p>
+            <img src="img/pokedex_hooh.png" alt = "">
+            <p>It can also be observed that the Pokedex application grabbed all the sprites for Ho-Oh from the PokeAPI, when viewing the pokemon in detail. Likewise, all the data entered by the user can also be displayed is also displayed in the statistics section.</p>
+            <img src="img/pokedex_individual_hooh.png" alt = "">
+            <p>All changes made to the application are saved in local storage, to maintain any additional pokemon added. This was done so on purpose as all pokemon data is public information, so there is not risk of classified information being leaked.</p>
+            <p>These user can at any point click the reset pokedex button, which will revert to prior any pokemon being added. This means it will revert back to generation 1 pokemon.</p>
+            <p><strong>What I Learned: </strong> This project had a lot of expectations to live up to, as I had a lot envisioned for its appearance in particular. It needed to match the theme of Pokémon, while still being functionally sound. This required following various UX techniques to make sure I do not sacrifice usability just for the sake of having a Pokémon inspired theme.</p>
+            <p>I feel this project found an excellent balance between functionality and appearance. It required extensive time honing my CSS skills, to create a finished project that does not have components that clash with one another. </p>
+        </div>
+        
+        
+        
+        <!-- Footer -->
+        <footer class = "footer">
+            <a href = "mailto:lall9370@mylaurier.ca" class = "footer-link">lall9370@mylaurier.ca</a>
+            <ul class = "social-list">
+                <li class = "social-list__item">
+                    <a class = "social-list__link" href = "https://www.linkedin.com/in/maninder-lall-3698a21a4/"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li class = "social-list__item">
+                    <a class = "social-list__link" href = "https://github.com/maninder-lall"><i class="fa-brands fa-github"></i></a></li>
+                <li class = "social-list__item">
+                    <a class = "social-list__link" href = "https://twitter.com/Maninderlall"><i class="fa-brands fa-twitter-square"></i></a></li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
